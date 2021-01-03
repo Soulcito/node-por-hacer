@@ -43,10 +43,7 @@ const crear = (descripcion) => {
 const getListado = (completado) => {
 
     cargarDB();
-    if (completado === true)
-        return listadoPorHacer.filter(tarea => tarea.completado === false);
-    else
-        return listadoPorHacer.filter(tarea => tarea.completado === true);
+    return listadoPorHacer.filter(tarea => tarea.completado === completado);
 }
 
 const actualizar = (descripcion, completado = true) => {

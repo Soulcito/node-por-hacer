@@ -7,6 +7,7 @@ const descripcion = {
 const completado = {
     alias: 'c',
     default: true,
+    type: 'boolean',
     desc: 'Marca como completado o pendiente la tarea'
 }
 
